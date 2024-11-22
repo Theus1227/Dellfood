@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeufomeFood - Seu delivery favorito</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url('./images/hero.jpg'); /* Certifique-se de que a imagem 'hero.jpg' está na pasta 'images' */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">DellFood</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#restaurants">Restaurantes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn btn-primary text-white" href="#download">Baixar App</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Peça sua comida favorita</h1>
+        <p>Entrega rápida, simples e na porta da sua casa.</p>
+        <button class="btn btn-danger btn-lg">Ver Restaurantes</button>
+    </div>
+</section>
+
+<!-- Restaurants Section -->
+<section id="restaurants" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Restaurantes em destaque</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/pizza.jpg" class="card-img-top" alt="Pizza">
+                    <div class="card-body">
+                        <h5 class="card-title">Pizzaria Aurora15</h5>
+                        <p class="card-text">As melhores pizzas com ingredientes frescos.</p>
+                        <button class="btn btn-danger add-to-cart">Pedir agora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/burger.jpg" class="card-img-top" alt="Hambúrguer">
+                    <div class="card-body">
+                        <h5 class="card-title">Dell Burger House</h5>
+                        <p class="card-text">Hambúrgueres artesanais e saborosos.</p>
+                        <button class="btn btn-danger add-to-cart">Pedir agora</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="./images/sushi.jpg" class="card-img-top" alt="Sushi">
+                    <div class="card-body">
+                        <h5 class="card-title">AlienWare Sushi</h5>
+                        <p class="card-text">Sushis e sashimis fresquinhos para você de outro mundo.</p>
+                        <button class="btn btn-danger add-to-cart">Pedir agora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Sobre Nós</h2>
+        <p class="text-center">O DeufomeFood conecta você aos melhores restaurantes da sua região. Com apenas alguns cliques, sua comida favorita chega até você. Simplifique sua vida, peça no DeufomeFood!</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-4 bg-dark text-white text-center">
+    <p>© 2024 DeufomeFood. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', () => {
+            alert('Item adicionado ao carrinho!');
+        });
+    });
+</script>
+</body>
+</html>
